@@ -9,6 +9,14 @@ QT       += core gui\
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+# Chemins utilises pour la compilation et l'installation de QET
+unix {
+        # Chemins UNIX
+        COMPIL_PREFIX              = '/usr/'
+        INSTALL_PREFIX             = '/usr/'
+       DXFtoQET_BINARY_PATH        = 'bin/'
+}
+
 TARGET = DXFtoQET
 TEMPLATE = app
 
